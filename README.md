@@ -1,2 +1,8 @@
-# nlp-VAERS
- Symptom Extraction and Linking from Vaccine Adverse Event Reports
+# Symptom Extraction and Linking from Vaccine Adverse Event Reports
+
+This project focuses on the automated extraction and linking of symptoms from Vaccine Adverse Event Reports (VAERS). VAERS serves as a crucial early warning system co-managed by the Centers for Disease Control and Prevention (CDC) and the U.S. Food and Drug Administration (FDA), monitoring potential safety concerns following vaccine administration. I will be specifically focusing on COVID-19 related reports. However, the issue with this system is that it is a passive reporting system, as in, not automatic. My primary goal is to develop a system that can automatically identify symptoms within the narrative text of VAERS reports and link them to standard symptom terms using named entity recognition packages and entity linking methods.
+
+The task is challenging due to the varying nature of VAERS reports and the absence of definitive ground truth annotations. This project addresses these challenges through innovative natural language processing techniques to enhance vaccine safety monitoring.
+Data collection involved navigating challenges in the VAERS dataset, including unconventional formatting, while data preprocessing encompassed selecting a representative dataset, conducting statistical analyses, and creating a relevant vocabulary. Symptom-Related Entity Extraction was accomplished using the Stanza package and biomedical/clinical NER models. The subsequent step of Entity Linking was implemented through rule-based methods, featuring fuzzy matching techniques with the fuzzywuzzy package.
+
+### Check out the Jupyter notebook containing all code [here](/code/nlp-vaers.ipynb) or the final report [here](/docs/final_report.pdf).
